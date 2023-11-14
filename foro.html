@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Foro Simplistic</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="shortcut icon" href="icon.png">
     <style type="text/css">
       footer
       {
@@ -26,20 +25,20 @@
       .boton-enlace
 
        {
-      color: #000; 
+      color: #000;
     }
 
-    .boton-enlace:hover 
+    .boton-enlace:hover
     {
-      color: #fff; 
+      color: #fff;
     }
 
 
 
     .acordeon-negro .accordion-button
      {
-      background-color: #601773; 
-      color: #fff; 
+      background-color: #601773;
+      color: #fff;
     }
 
       .contenido
@@ -51,21 +50,21 @@
 
       .barra
       {
-        position: fixed; 
-        z-index: 1000; 
+        position: fixed;
+        z-index: 1000;
 
-        
+       
       }
 
       .comentarios
       {
-        width: 70%; 
-        margin: 0 auto; 
+        width: 70%;
+        margin: 0 auto;
 
 
       }
       .form-check-input:checked + .form-check-label,
-      .form-check-input:checked ~ .form-check-input + .form-check-label 
+      .form-check-input:checked ~ .form-check-input + .form-check-label
 
 
 {
@@ -83,7 +82,7 @@
   color: white;
   text-align: center;
 }
-  
+ 
 :root {
   font-size: 16px;
   font-family: 'Open Sans';
@@ -298,9 +297,9 @@ main {
     </style>
 
    <script type="text/javascript">
-  
+ 
 /* rellenado de casillas*/
-function actualizarCasillas(casilla) 
+function actualizarCasillas(casilla)
 {
     var casillas = document.querySelectorAll('.form-check-input');
     var indice = Array.from(casillas).indexOf(casilla);
@@ -373,7 +372,7 @@ document.getElementById('themeButton').onclick = toggleTheme;
       </li>
 
       <li class="nav-item">
-        <a href="index.html" target="blank_" class="nav-link">
+        <a href="#" class="nav-link">
           <svg
             aria-hidden="true"
             focusable="false"
@@ -570,7 +569,7 @@ document.getElementById('themeButton').onclick = toggleTheme;
       </li>
     </ul>
   </nav>
-<!--codigo natvar--> 
+<!--codigo natvar-->
 <div class="contenido">
 <div class="text-secondary">
  <div class="container">
@@ -589,191 +588,184 @@ document.getElementById('themeButton').onclick = toggleTheme;
 
   </div>
 
-   <div class="row"> 
- <div class="col-6 col-xs-3 col-md-3">    
-  <ul class="list-group" >      
-  <li class="list-group-item" style="background-color: black;"  >
+   <div class="row">
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item" style="background-color: black;">
+                <div class="container mt-5">
+                    <div class="accordion acordeon-negro" id="acordeonEjemplo">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="item1">
+                                <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    STREET FIGHTER
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="item1" data-bs-parent="#acordeonEjemplo">
+                                <div class="accordion-body">
+                                    La serie "Street Fighter" es una de las más icónicas y longevas en el género de juegos de lucha, habiendo debutado con su primer título en 1987. La franquicia ha evolucionado a lo largo de los años, y ha tenido múltiples secuelas y spin-offs.
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="item2">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    REQUERIMIENTOS
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="item2" data-bs-parent="#acordeonEjemplo">
+                                <div class="accordion-body">
+                                    <p class="text-md">
+                                        REQUERIMIENTOS MÍNIMOS:<br>
+                                        SO: WINDOWS® 10 (64-BIT Required)<br>
+                                        Procesador: Intel® Core™ i5-4460 or AMD FX™-6300 or better<br>
+                                        Memoria: 4 GB de RAM<br>
+                                        Gráficos: NVIDIA® GeForce® GTX 760 or AMD Radeon™ R7 260x with 2GB Video RAM<br>
+                                        DirectX: Versión 11<br>
+                                        Almacenamiento: 4 GB de espacio disponible<br>
+                                        Notas adicionales: Hardware specification target 720P/60FPS. *Xinput support Controllers recommended
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-<div class="container mt-5">
+                        <div class="text-white">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                                <label class="form-check-label" for="inlineCheckbox4">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                                <label class="form-check-label" for="inlineCheckbox5">5</label>
+                            </div>
+                            <button>Enviar comentarios</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 
-  <div class="accordion acordeon-negro" id="acordeonEjemplo">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="item1">
-        <button class="accordion-button  text-white" type="button color" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1 ">
-          STREET FIGHTER 
-        </button>
-      </h2>
-      <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="item1" data-bs-parent="#acordeonEjemplo">
-        <div class="accordion-body">
-        La serie "Street Fighter" es una de las más icónicas y longevas en el género de juegos de lucha, habiendo debutado con su primer título en 1987. La franquicia ha evolucionado a lo largo de los años, y ha tenido múltiples secuelas y spin-offs.
+    <div class="col-md-6">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/068459a8df876fedbb27cb02f67e5418.gif" alt="Card image cap" width="150" height="150">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <a href="https://www.minijuegos.com/juego/street-fighter-ii-champion-edition" class="btn btn-outline-dark boton-enlace card-link" role="button">
+                        JUEGO ONLINE
+                    </a>
+                    <a href="https://img.buzzfeed.com/buzzfeed-static/static/2017-06/14/12/asset/buzzfeed-prod-fastlane-01/sub-buzz-12816-1497458048-2.png?downsize=700%3A%2A&output-quality=auto&output-format=auto" class="btn btn-outline-dark boton-enlace card-link" role="button">
+                        GUÍA DEL JUEGO
+                    </a>
+                </div>
+                <img class="card-img-top" src="img/icegif-1062.gif" alt="Card image cap" width="150" height="150">
+            </div>
         </div>
-      </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item" style="background-color: black;">
+                <div class="container mt-5">
+                    <div class="accordion acordeon-negro" id="acordeonEjemplo">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="item1">
+                                <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                     MORTAL KOMBAT
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="item1" data-bs-parent="#acordeonEjemplo">
+                                <div class="accordion-body">
+                                    El primer juego de "Mortal Kombat" fue lanzado en 1992. Fue un juego de lucha en 2D que se destacó por su enfoque en la violencia y los "Fatality", movimientos finales brutales que permitían a los jugadores derrotar a sus oponentes de manera impactante.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="item2">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    REQUERIMIENTOS
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="item2" data-bs-parent="#acordeonEjemplo">
+                                <div class="accordion-body">
+                                    <p class="text-md">
+                                        SO: WINDOWS® 10 (64-BIT Required)<br>
+                                    Procesador: Intel® Core™ i5-4460 or AMD FX™-6300 or better<br>
+                                    Memoria: 4 GB de RAM<br>
+                                    Gráficos: NVIDIA® GeForce® GTX 760 or AMD Radeon™ R7 260x with 2GB Video RAM<br>
+                                    DirectX: Versión 11<br>
+                                    Almacenamiento: 4 GB de espacio disponible<br>
+                                    Notas adicionales: Hardware specification target 720P/60FPS. *Xinput support Controllers recommended
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-white">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                                <label class="form-check-label" for="inlineCheckbox4">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                                <label class="form-check-label" for="inlineCheckbox5">5</label>
+                            </div>
+                            <button>Enviar comentarios</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
 
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="item2">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-          REQUERIMIENTOS
-        </button>
-      </h2>
-      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="item2" data-bs-parent="#acordeonEjemplo">
-        <div class="accordion-body">
-           REQUERIMIENTOS  MÍNIMOS :
-SO: WINDOWS® 10 (64-BIT Required)
-Procesador: Intel® Core™ i5-4460 or AMD FX™-6300 or better
-Memoria: 4 GB de RAM
-Gráficos: NVIDIA® GeForce® GTX 760 or AMD Radeon™ R7 260x with 2GB Video RAM
-DirectX: Versión 11
-Almacenamiento: 4 GB de espacio disponible
-Notas adicionales: Hardware specification target 720P/60FPS. *Xinput support Controllers recommended
+    <div class="col-md-6">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/Mk3liu2.gif" alt="Card image cap" width="150" height="150">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <a href="https://www.minijuegos.com/juego/mortal-kombat" class="btn btn-outline-dark boton-enlace card-link" role="button">
+                        JUEGO ONLINE
+                    </a>
+                    <a href="https://img.buzzfeed.com/buzzfeed-static/static/2017-06/14/12/asset/buzzfeed-prod-fastlane-01/sub-buzz-12816-1497458048-2.png?downsize=700%3A%2A&output-quality=auto&output-format=auto" class="btn btn-outline-dark boton-enlace card-link" role="button">
+                        GUÍA DEL JUEGO
+                    </a>
+                </div>
+                <img class="card-img-top" src="img/giphy.gif" alt="Card image cap" width="150" height="150">
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class ="text-white"> 
-    <div class="form-check form-check-inline">
-
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" >
-  <label class="form-check-label" for="inlineCheckbox1" >1</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-  <label class="form-check-label" for="inlineCheckbox2">2</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
-  <label class="form-check-label" for="inlineCheckbox3" >3 </label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option4" >
-  <label class="form-check-label" for="inlineCheckbox4" >4 </label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option5" >
-  <label class="form-check-label" for="inlineCheckbox5" input type="color" value="#ff0000"  >5 </label>
-
-
-</div>
-</li> 
-  <button>  Enviar comentarios </button></li>
-</div>
-<div class="col-6 col-xs-3 col-md-3" >
-   <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="img\068459a8df876fedbb27cb02f67e5418.gif" alt="Card image cap" width="150" height="150">
-  
-
-  
-  </ul>
-  <div class="card-body">
-  <div class="d-flex justify-content-between">
-    <a href="https://www.minijuegos.com/juego/street-fighter-ii-champion-edition" class="btn btn-outline-dark boton-enlace card-link" role="button">
-      JUEGO ONLINE 
-    </a>
-    <a href="https://img.buzzfeed.com/buzzfeed-static/static/2017-06/14/12/asset/buzzfeed-prod-fastlane-01/sub-buzz-12816-1497458048-2.png?downsize=700%3A%2A&output-quality=auto&output-format=auto" class="btn btn-outline-dark boton-enlace card-link" role="button">
-      GUIA DEL JUEGO
-    </a>
-
-
-
-  </div>
-  <img class="card-img-top" src="img/icegif-1062.gif" alt="Card image cap" width="150" height="150">
-</div>
-
-</div>
-
-</div>
-<div class="col-6 col-xs-3 col-md-3">    
-  <ul class="list-group" >      
-  <li class="list-group-item" style="background-color: black;"  >
-
-
-<div class="container mt-5">
-
-  <div class="accordion acordeon-negro" id="acordeonEjemplo">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="item1">
-        <button class="accordion-button  text-white" type="button color" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1 ">
-        MORTALKOMBAT 
-        </button>
-      </h2>
-      <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="item1" data-bs-parent="#acordeonEjemplo">
-        <div class="accordion-body">
-        El primer juego de "Mortal Kombat" fue lanzado en 1992. Fue un juego de lucha en 2D que se destacó por su enfoque en la violencia y los "Fatality", movimientos finales brutales que permitían a los jugadores derrotar a sus oponentes de manera impactante.
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="item2">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-          REQUERIMIENTOS
-        </button>
-      </h2>
-      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="item2" data-bs-parent="#acordeonEjemplo">
-        <div class="accordion-body">
-           REQUERIMIENTOS  MÍNIMOS :
-SO: WINDOWS® 10 (64-BIT Required)
-Procesador: Intel® Core™ i5-4460 or AMD FX™-6300 or better
-Memoria: 4 GB de RAM
-Gráficos: NVIDIA® GeForce® GTX 760 or AMD Radeon™ R7 260x with 2GB Video RAM
-DirectX: Versión 11
-Almacenamiento: 4 GB de espacio disponible
-Notas adicionales: Hardware specification target 720P/60FPS. *Xinput support Controllers recommended
-        </div>
-      </div>
-  <li class="list-group-item"style="background-color: black;"  >
-
-   <div class="text-white"> 
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-        <label class="form-check-label" for="inlineCheckbox1">1</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-        <label class="form-check-label" for="inlineCheckbox2">2</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-        <label class="form-check-label" for="inlineCheckbox3">3</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-        <label class="form-check-label" for="inlineCheckbox4">4</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-        <label class="form-check-label" for="inlineCheckbox5">5</label>
     </div>
 </div>
 
-
-</li> 
-  <button>  Enviar comentarios </button></li>
-</div>
-
-<div class="col-6 col-xs-12 col-md-3" >
-   <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="img\Mk3liu2.gif" alt="Card image cap" width="150" height="150">
-  
-  <div class="card-body">
-  <div class="d-flex justify-content-between">
-    <a href="https://www.minijuegos.com/juego/mortal-kombat" class="btn btn-outline-dark boton-enlace card-link" role="button">
-      JUEGO ONLINE 
-    </a>
-    <a href="https://img.buzzfeed.com/buzzfeed-static/static/2017-06/14/12/asset/buzzfeed-prod-fastlane-01/sub-buzz-12816-1497458048-2.png?downsize=700%3A%2A&output-quality=auto&output-format=auto" class="btn btn-outline-dark boton-enlace card-link" role="button">
-      GUIA DEL JUEGO
-    </a>
-  </div>
-  <img class="card-img-top" src="img\giphy.gif" alt="Card image cap" width="150" height="150">
-  </div>
-</div>
-
-</ul>
-    </div>
-    
+   
  <!-- Comments section-->
-                  
+                 
                     <section class="mb-10 comentarios" >
                         <div class="card bg-warning">
                             <div class="card-body">
@@ -815,7 +807,7 @@ Notas adicionales: Hardware specification target 720P/60FPS. *Xinput support Con
                             </div>
                         </div>
                     </section>
-                
+               
 
 
   <h1 class="display-4bg-primary text-white" >
@@ -828,37 +820,34 @@ Notas adicionales: Hardware specification target 720P/60FPS. *Xinput support Con
 
   </h1>
 
-   <div class="row"> 
- <div class="col-6 col-xs-3 col-md-3">    
-  <ul class="list-group" >      
-  <li class="list-group-item" style="background-color: black;"  >
+   <div class="row">
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item" style="background-color: black;">
+                <div class="container mt-5">
+                    <div class="accordion acordeon-negro" id="acordeonEjemplo">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="item1">
+                                <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                     BATTLE FIELD 2042
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="item1" data-bs-parent="#acordeonEjemplo">
+                                <div class="accordion-body">
+                                    Battlefield 2042 es un videojuego de disparos en primera persona desarrollado por DICE y publicado por Electronic Arts (EA). Pertenece a la popular serie Battlefield y fue lanzado en noviembre de 2021. El juego está disponible en varias plataformas, incluyendo Microsoft Windows, PlayStation 4, PlayStation 5, Xbox One y Xbox Series X/S
+                            </div>
+                        </div>
 
-
-<div class="container mt-5">
-
-  <div class="accordion acordeon-negro" id="acordeonEjemplo">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="item1">
-        <button class="accordion-button  text-white" type="button color" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1 ">
-          BATTLE FIELD 2042
-        </button>
-      </h2>
-      <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="item1" data-bs-parent="#acordeonEjemplo">
-        <div class="accordion-body">
-        Battlefield 2042 es un videojuego de disparos en primera persona desarrollado por DICE y publicado por Electronic Arts (EA). Pertenece a la popular serie Battlefield y fue lanzado en noviembre de 2021. El juego está disponible en varias plataformas, incluyendo Microsoft Windows, PlayStation 4, PlayStation 5, Xbox One y Xbox Series X/S
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="item2">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-          REQUERIMIENTOS
-        </button>
-      </h2>
-      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="item2" data-bs-parent="#acordeonEjemplo">
-        <div class="accordion-body">
-           Requisitos para PC de Battlefield™ 2042
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="item2">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    REQUERIMIENTOS
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="item2" data-bs-parent="#acordeonEjemplo">
+                                <div class="accordion-body">
+                                    <p class="text-md">
+                                        Requisitos para PC de Battlefield™ 2042
 Sistema operativo: Windows 10 de 64 bits.
 Procesador (AMD): AMD Ryzen 5 1600.
 Procesador (Intel): Core i5 6600K.
@@ -867,81 +856,86 @@ Memoria de video: 4 GB.
 Tarjeta de video (NVIDIA): Nvidia GeForce GTX 1050 Ti.
 Tarjeta de video (AMD): AMD Radeon RX 560.
 DirectX: 12.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-white">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                                <label class="form-check-label" for="inlineCheckbox4">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                                <label class="form-check-label" for="inlineCheckbox5">5</label>
+                            </div>
+                            <button>Enviar comentarios</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img\battlefield-2042.gif" alt="Card image cap" width="150" height="150">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <a href="https://store.epicgames.com/es-ES/p/battlefield-2042" class="btn btn-outline-dark boton-enlace card-link" role="button">
+                        JUEGO ONLINE
+                    </a>
+                    <a href="https://img.buzzfeed.com/buzzfeed-static/static/2017-06/14/12/asset/buzzfeed-prod-fastlane-01/sub-buzz-12816-1497458048-2.png?downsize=700%3A%2A&output-quality=auto&output-format=auto" class="btn btn-outline-dark boton-enlace card-link" role="button">
+                        GUÍA DEL JUEGO
+                    </a>
+                </div>
+                <img class="card-img-top" src="img\battlefield-battlefield2042.gif" alt="Card image cap" width="150" height="150">
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="text-white"> 
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-        <label class="form-check-label" for="inlineCheckbox1">1</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-        <label class="form-check-label" for="inlineCheckbox2">2</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-        <label class="form-check-label" for="inlineCheckbox3">3</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-        <label class="form-check-label" for="inlineCheckbox4">4</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-        <label class="form-check-label" for="inlineCheckbox5">5</label>
     </div>
 </div>
+<div class="row">
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item" style="background-color: black;">
+                <div class="container mt-5">
+                    <div class="accordion acordeon-negro" id="acordeonEjemplo">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="item1">
+                                <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                      OUTLAS
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="item1" data-bs-parent="#acordeonEjemplo">
+                                <div class="accordion-body">
+                                    Es un videojuego de terror desarrollado por Red Barrels, la misma compañía que creó los juegos anteriores de la serie "Outlast". A diferencia de los juegos anteriores de la serie, "The Outlast Trials" se juega en modo multijugador cooperativo en línea, en lugar de ser una experiencia para un solo jugador.
+                                </div>
+                            </div>
+                        </div>
 
-</li> 
-  <button>  Enviar comentarios </button></li>
-</div>
-<div class="col-6 col-xs-3 col-md-3" >
-   <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="img\battlefield-2042.gif" alt="Card image cap" width="150" height="150">
-
-  <div class="card-body">
-  <div class="d-flex justify-content-between">
-    <a href="https://store.epicgames.com/es-ES/p/battlefield-2042" class="btn btn-outline-dark boton-enlace card-link" role="button">
-      JUEGO ONLINE 
-    </a>
-    <a href="https://img.buzzfeed.com/buzzfeed-static/static/2017-06/14/12/asset/buzzfeed-prod-fastlane-01/sub-buzz-12816-1497458048-2.png?downsize=700%3A%2A&output-quality=auto&output-format=auto" class="btn btn-outline-dark boton-enlace card-link" role="button">
-      GUIA DEL JUEGO
-    </a>
-  </div>
-  <img class="card-img-top" src="img\battlefield-battlefield2042.gif" alt="Card image cap" width="150" height="150">
-  </div>
-</div>
-
-</div>
-<div class="col-6 col-xs-3 col-md-3" > 
-  <ul class="list-group" >      
-  <li class="list-group-item" style="background-color: black;"  >
-    <div class="container mt-5">
-
-  <div class="accordion acordeon-negro" id="acordeonEjemplo">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="item1">
-        <button class="accordion-button  text-white" type="button color" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1 ">
-          OUTLAST 
-        </button>
-      </h2>
-      <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="item1" data-bs-parent="#acordeonEjemplo">
-        <div class="accordion-body">
-        Es un videojuego de terror desarrollado por Red Barrels, la misma compañía que creó los juegos anteriores de la serie "Outlast". A diferencia de los juegos anteriores de la serie, "The Outlast Trials" se juega en modo multijugador cooperativo en línea, en lugar de ser una experiencia para un solo jugador.
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="item2">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-          REQUERIMIENTOS
-        </button>
-      </h2>
-      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="item2" data-bs-parent="#acordeonEjemplo">
-        <div class="accordion-body">
-           Sistema operativo:
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="item2">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    REQUERIMIENTOS
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="item2" data-bs-parent="#acordeonEjemplo">
+                                <div class="accordion-body">
+                                    <p class="text-md">
+                                        Sistema operativo:
 
             Windows 10 (64 bits)
             Procesador:
@@ -965,52 +959,56 @@ DirectX: 12.
               Tarjeta de sonido:
 
              Compatible con DirectX 11
-      </div>
-    </div>
-    <li class="list-group-item"style="background-color: black;"  >
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-   <div class="text-white"> 
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-        <label class="form-check-label" for="inlineCheckbox1">1</label>
+                        <div class="text-white">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                                <label class="form-check-label" for="inlineCheckbox4">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                                <label class="form-check-label" for="inlineCheckbox5">5</label>
+                            </div>
+                            <button>Enviar comentarios</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-        <label class="form-check-label" for="inlineCheckbox2">2</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-        <label class="form-check-label" for="inlineCheckbox3">3</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-        <label class="form-check-label" for="inlineCheckbox4">4</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-        <label class="form-check-label" for="inlineCheckbox5">5</label>
-    </div>
-</div>
 
-</li> 
-  <button>  Enviar comentarios </button></li>
-</div>
-
-<div class="col-6 col-xs-12 col-md-3" >
-   <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="img\outlast.gif" alt="Card image cap" width="150" height="150">
-  
-  <div class="card-body">
-  <div class="d-flex justify-content-between">
-    <a href="https://store.epicgames.com/es-ES/p/the-outlast-trials" class="btn btn-outline-dark boton-enlace card-link" role="button">
-      JUEGO ONLINE 
-    </a>
-    <a href="https://img.buzzfeed.com/buzzfeed-static/static/2017-06/14/12/asset/buzzfeed-prod-fastlane-01/sub-buzz-12816-1497458048-2.png?downsize=700%3A%2A&output-quality=auto&output-format=auto" class="btn btn-outline-dark boton-enlace card-link" role="button">
-      GUIA DEL JUEGO
-    </a>
-  </div>
-  <img class="card-img-top" src="img\tumblr_39a239221d9af65c52b624ec11ff64c5_c0aaa405_400.gif" alt="Card image cap" width="150" height="150">
-  </div>
+    <div class="col-md-6">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img\outlast.gif" alt="Card image cap" width="150" height="150">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <a href="https://store.epicgames.com/es-ES/p/the-outlast-trials" class="btn btn-outline-dark boton-enlace card-link" role="button">
+                        JUEGO ONLINE
+                    </a>
+                    <a href="https://img.buzzfeed.com/buzzfeed-static/static/2017-06/14/12/asset/buzzfeed-prod-fastlane-01/sub-buzz-12816-1497458048-2.png?downsize=700%3A%2A&output-quality=auto&output-format=auto" class="btn btn-outline-dark boton-enlace card-link" role="button">
+                        GUÍA DEL JUEGO
+                    </a>
+                </div>
+                <img class="card-img-top" src="img\tumblr_39a239221d9af65c52b624ec11ff64c5_c0aaa405_400.gif" alt="Card image cap" width="150" height="150">
+            </div>
+        </div>
+    </div>
 </div>
 
 </ul>
@@ -1063,3 +1061,4 @@ DirectX: 12.
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
+
